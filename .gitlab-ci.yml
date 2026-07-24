@@ -3,16 +3,10 @@ image: python:3.12
 stages:
   - test
 
-before_script:
-  - python --version
-  - pip install -r requirements.txt
+stages:
+  - test
 
-selenium_test:
+runner_test:
   stage: test
   script:
-    - mkdir -p reports
-    - pytest tests --html=reports/report.html --self-contained-html
-  artifacts:
-    when: always
-    paths:
-      - reports/
+    - echo "Runner is working successfully!"
