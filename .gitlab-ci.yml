@@ -9,4 +9,4 @@ stages:
 runner_test:
   stage: test
   script:
-    - echo "Runner is working successfully!"
+    - echo "Runner is now working successfully!"
